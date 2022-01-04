@@ -44,5 +44,5 @@ for count, subfolder in enumerate(os.listdir(folder)):
         small_image  = ''
         thumbnail_image = subfolder+'/'+productsCarajasData[subfolder][0]
         additional_images = subfolder+'/'+productsCarajasData[subfolder][1]
-        outputWriter.writerow ([sku, base_image, small_image, thumbnail_image, additional_images])
+        outputWriter.writerow ([sku, base_image, thumbnail_image, small_image, additional_images])
 productsImagesFolder.close()
