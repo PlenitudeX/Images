@@ -1,6 +1,6 @@
 from custom_simple_image_download import simple_image_download as simp 
 import csv
-OpenFileCSV = '3coracoes-Teste.csv'
+OpenFileCSV = 'Produtos-carajas-to-CVS-Magento - Top-6210-Magento-import.csv'
 openProducts = open(OpenFileCSV, encoding='utf-8', errors='ignore')
 productsCarajas = csv.reader(openProducts, delimiter= ",")
 productsCarajasData = list(productsCarajas)
@@ -18,5 +18,5 @@ response = simp.simple_image_download
 
 for k, v in sliceDict.items():
     print(k,v)
-    response().download(v.replace("/", ' '), 2, k) # v (valor) k (chave) replace ([procura],[troca],[quantidade de imagem],[chave])
+    response().download(v.replace("/", ' '), 2, k)
 
